@@ -1,3 +1,6 @@
+WHY IT STANDS OUT ?
+Unlike most of the programs which use numpy or import libraries, this uses
+
 LOGARITHM CALCULATOR
 
 This is a lightweight Command Line Interface (CLI) Python program I built during my 10th-grade year to merge my algebra studies with introductory computer science logic.

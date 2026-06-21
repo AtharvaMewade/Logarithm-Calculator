@@ -21,10 +21,12 @@ try: #Tries Interpreting User's Input Based On 1, 2, 3
     elif choice == 2: # Checks If 'choice' input is 2
         steps = float(input("Enter The Step Of Logarithm:")) #Asks User For Steps's Input
         base = float(input("Enter The Base Of Logarithm:")) #Asks User For Base Of Log
-        target = 1 #Assupmtion That Target Is One
-        while steps > 0: # States An Condition To Run Code If Steps > 0
-            target = target * base # Multiplies 'Target' Starting With Assuption '1' As Stated Earlier
-            steps -= 1 # Every Time The Multiplication is Done, One Step Is Subtracted From Total Step, This Is Done Till total Step Is Equal To Zero
+        target = 1.0 #Assupmtion That Target Is One
+        if steps%2 !=0: #Checks if User's Input Is Odd
+            target = target * base  # 1 Is Multipied With Target Because It Locks Out That '1' Remainder
+        while steps > 0: # Runs Loop Till The No. Of Steps Is Equal To Zero
+            base = base*base # Multiplies Itself Then It Is Assigned New 'Base' Value. The Loop Repeats Itself Till The Total Steps Are Zero
+            steps = steps//2 # Floor Divides Itself Then Assigns Itself New 'Step' Value. the Loop Repeats The No. Times the Above Loop Repeatss
         print("The Target Of Logarithm Is:",target)
     
     elif choice == 3:
