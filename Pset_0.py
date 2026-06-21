@@ -11,31 +11,31 @@ try: #Tries Interpreting User's Input Based On 1, 2, 3
             #-- Math Engine: Slices The Search Space Into Half (O(log n)efficiency)
             base = (highest_possible_base + lowest_possible_base) / 2 # Bisection Step: Guesses The Perfect Middle Term
             test_result = base ** steps #Base Is Raised To No. Of Steps
-            # Decision Matrix -- Adjusts The Boundraries Of The Resukts
+            # Decision Matrix -- Adjusts The Boundraries Of The Results
             if test_result > target: #If Result Is Higher Target
-                highest_possible_base = base# Assumption That Highest Possible Base Is The Base
-            elif test_result < target:# If Above COndition Is False Then Then It Checks If The Results Are Smaller Than Target
-                lowest_possible_base = base #Then lowest POssible Base Is The Base Itself
+                highest_possible_base = base #Eliminates All The Higher Possibilities
+            elif test_result < target:# If Above Condition Is False Then Then It Checks If The Results Are Smaller Than Target
+                lowest_possible_base = base #It Eliminates All Lower Possibilities
         print("The Base Of Logarithm Is:", base)# Prints The Base Which Satisfies The Condition Of 'if' or 'elif'
             
-    elif choice == 2:
-        steps = float(input("Enter The Step Of Logarithm:"))
-        base = float(input("Enter The Base Of Logarithm:"))
-        target = 1
-        while steps > 0:
-            target = target * base
-            steps -= 1
+    elif choice == 2: # Checks If 'choice' input is 2
+        steps = float(input("Enter The Step Of Logarithm:")) #Asks User For Steps's Input
+        base = float(input("Enter The Base Of Logarithm:")) #Asks User For Base Of Log
+        target = 1 #Assupmtion That Target Is One
+        while steps > 0: # States An Condition To Run Code If Steps > 0
+            target = target * base # Multiplies 'Target' Starting With Assuption '1' As Stated Earlier
+            steps -= 1 # Every Time The Multiplication is Done, One Step Is Subtracted From Total Step, This Is Done Till total Step Is Equal To Zero
         print("The Target Of Logarithm Is:",target)
     
-    else:
+    else: 
         choice == 3
-        base = float(input("Enter The Base Of Logarithm:"))
-        target = float(input("Enter The Target Of Logarithm:"))
-        count = 0
-        while target > 1:
-            target = target/base
-            count += 1
+        base = float(input("Enter The Base Of Logarithm:")) # Asks User For Logarith's Base
+        target = float(input("Enter The Target Of Logarithm:")) # Asks User For Target
+        count = 0 # Assignment Of Empty Bracket. Here, count = 0
+        while target > 1: # Runs Loop If Target Is Greater Is Greater Than 1.
+            target = target/base # Division Of Target By Base And Every Time That's Done A New Target Value Is Recieved Which Gets Smaller Everytime
+            count += 1 # The No. Of Times The Above Procedure Is Done, One I Added To It
         print("The Steps Of Logarithm Is:",count)
 
-except:
-    print("Error: Invalid Input, Restart The Program And Enter Valid Inputs:")
+except: # Acts As A Safety Net Preventing Program To Crash
+    print("Error: Invalid Input, Restart The Program And Enter Valid Inputs:") # If User Presents Invalid Input, Then It Prints This Statement
