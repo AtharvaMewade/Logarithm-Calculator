@@ -15,3 +15,8 @@ The program offers three straightforward execution paths depending on the unknow
 
 📜 LICENSE
 This project is distributed under the open-source MIT License.
+
+💡 Project Background & Inspiration
+This project was directly inspired by **MIT OpenCourseWare's 6.0001 (Fall 2016) Problem Set 0**. While the official assignment instructs students to simply use a built-in library to print a logarithm value, I wanted to challenge myself by building the underlying mathematical engine from scratch. 
+
+Instead of relying on standard imports, I implemented a custom **Bisection Search** loop to natively calculate logarithm components with an optimized **$O(\log n)$ time complexity**.
