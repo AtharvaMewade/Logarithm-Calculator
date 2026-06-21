@@ -27,8 +27,7 @@ try: #Tries Interpreting User's Input Based On 1, 2, 3
             steps -= 1 # Every Time The Multiplication is Done, One Step Is Subtracted From Total Step, This Is Done Till total Step Is Equal To Zero
         print("The Target Of Logarithm Is:",target)
     
-    else: 
-        choice == 3
+    elif choice == 3:
         base = float(input("Enter The Base Of Logarithm:")) # Asks User For Logarith's Base
         target = float(input("Enter The Target Of Logarithm:")) # Asks User For Target
         count = 0 # Assignment Of Empty Bracket. Here, count = 0
