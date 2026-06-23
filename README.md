@@ -1,5 +1,5 @@
 WHY IT STANDS OUT ?
-Unlike most of the programs which use numpy or import libraries, this uses independent algotrithm to find bases, targets and steps without any use of libraries. Just pure python logic
+Unlike most of the programs which use numpy or import libraries, this uses independent algotrithm to find bases, targets and steps without any use of libraries. Just pure python logic Of O(1) and O(log n)
 
 LOGARITHM CALCULATOR
 
@@ -11,9 +11,9 @@ I designed this tool for students working on logarithmic problems who know the i
 🛠️ HOW IT WORKS
 
 The program offers three straightforward execution paths depending on the unknown value:
-1. **Find Base (Option 1):** Approximates an unknown base using **Bisection Search** (binary search) logic. By splitting the search bounds in half dynamically, it calculates values with efficient **$O(\log n)$ time complexity**.
-2. **Find Target (Option 2):** Calculates the final exponential result by continuously multiplying the base across the step count.
-3. **Find Steps (Option 3):** Determines the numerical exponent required by continuously dividing the target by its base.
+1. **Find Base (Option 1):** Approximates an unknown base using **Bisection Search** (binary search) logic. By splitting the search bounds in half dynamically, it calculates values with efficient O(1).
+2. **Find Target (Option 2):** Calculates the final exponential result by continuously multiplying the base across the step count using O(1).
+3. **Find Steps (Option 3):** Determines the numerical exponent required by continuously dividing the target by its base Using O(1).
 4. More details, ready comments side by side to understand mechanism
 
 📜 LICENSE
@@ -22,4 +22,4 @@ This project is distributed under the open-source MIT License.
 💡 Project Background & Inspiration
 This project was directly inspired by **MIT OpenCourseWare's 6.0001 (Fall 2016) Problem Set 0**. While the official assignment instructs students to simply use a built-in library to print a logarithm value, I wanted to challenge myself by building the underlying mathematical engine from scratch. 
 
-Instead of relying on standard imports, I implemented a custom **Bisection Search** loop to natively calculate logarithm components with an optimized **$O(\log n)$ time complexity**.
+Instead of relying on standard imports, I implemented a custom **Bisection Search** loop to natively calculate logarithm components with an optimized **$O(\log n)$ time complexity** and **O(1)**.
