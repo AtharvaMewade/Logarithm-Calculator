@@ -1,4 +1,4 @@
-WHY IT STANDS OUT ?
+AND WHY IT STANDS OUT ?
 Unlike most of the programs which use numpy or import libraries, this uses independent algotrithm to find bases, targets and steps without any use of libraries. Just pure python logic Of O(1) and O(log n)
 
 LOGARITHM CALCULATOR
